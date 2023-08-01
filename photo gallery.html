@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-color: #222;
+                margin-top: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            .thumbnails img{
+                height: 80px;
+                border: 4px solid #555;
+                margin: 0 10px 10px 0;
+                padding: 1px;
+            }
+            .thumbnails img:hover{
+                border: 4px solid #00ccff;
+            }
+            .preview img{
+                border: 4px solid #444;
+                padding: 1px;
+                height: 500px;
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container" align="center">
+            <h1>Flower Gallery</h1>
+
+            <br/>
+
+            <div class="thumbnails">
+                <img onmouseover="preview.src=sunflower.src" name="sunflower" src="sunflower.jpeg"/>
+                <img onmouseover="preview.src=lily.src" name="lily" src="lily.jpg"/>
+                <img onmouseover="preview.src=Hydrangea.src" name="Hydrangea" src="Hydrangea.jpeg"/>
+                <img onmouseover="preview.src=daisy.src" name="daisy" src="daisy.jpeg"/>
+                <img onmouseover="preview.src=lotus.src" name="lotus" src="lotus.jpg"/>
+            </div>
+            <div class="preview" align="center">
+                <img name="preview" src="flower cat.jpg"/>
+            </div>
+        </div>
+    </body>
+</html>
